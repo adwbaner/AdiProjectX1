@@ -1,0 +1,27 @@
+<!-- Copy paste from your own laptop Vibhanshu,also check the jars properly -->
+<!--  <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://w...content-available-to-author-only...k.org/schema/beans"
+xmlns:xsi="http://w...content-available-to-author-only...3.org/2001/XMLSchema-instance"
+xmlns:context="http://w...content-available-to-author-only...k.org/schema/context"
+xmlns:mvc="http://w...content-available-to-author-only...k.org/schema/mvc"
+xsi:schemaLocation="http://w...content-available-to-author-only...k.org/schema/beans
+http://w...content-available-to-author-only...k.org/schema/beans/spring-beans.xsd
+http://w...content-available-to-author-only...k.org/schema/context
+http://w...content-available-to-author-only...k.org/schema/context/spring-context.xsd http://w...content-available-to-author-only...k.org/schema/mvc http://w...content-available-to-author-only...k.org/schema/mvc/spring-mvc.xsd">
+--> 
+<bean id="myBeansValidator"
+    class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"/>
+    <mvc:annotation-driven validator="myBeansValidator"/>
+  <context:component-scan base-package="com.cg.tms.controller" />
+   <mvc:annotation-driven/>
+  <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass">
+			<value>org.springframework.web.servlet.view.JstlView</value>
+		</property>
+		<property name="prefix"><value>/</value></property>
+		<property name="suffix"><value>.jsp</value></property>
+  </bean> 
+ 
+ 
+ 
+</beans>

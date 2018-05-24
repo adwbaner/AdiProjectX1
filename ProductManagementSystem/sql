@@ -1,0 +1,15 @@
+Create table Product(
+id number(20),
+name varchar2(20),
+price number(20),
+category varchar2(20),
+manufactureDate date);
+
+desc product;
+
+create sequence pro_id_seq
+start with 1000
+increment by 1
+nocycle;
+
+select * from product;
